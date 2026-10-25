@@ -1,0 +1,17 @@
+% source: tables/accuracy_table.csv
+\begin{table*}[b]
+\centering
+\caption{Point prediction accuracy. $\star$~=~selected best HP. $\downarrow$ lower is better.}
+\label{tab:accuracy}
+\begin{tabular}{llccccc}
+\toprule
+Method & HP & sine & cosine & bearing$\downarrow$ (°) & range$\downarrow$ (m) & Euclidean$\downarrow$ (m) \\
+\midrule
+Base Model & | & 0.1455 & 0.1435 & 13.66 & 12.42 & 23.22 \\
+MC \cite{gal2016dropout} & $i: 30$ | $j: 0.1$ & 0.1457 & 0.1454 & 13.50 & 12.00 & 22.93 \\
+Evidential * & $c: 0.7$ | $\eta: 0.01$ & 0.1010 & 0.1040 & \textbf{10.64} & 6.16 & \textbf{15.68} \\
+Evidential & $c: 0.7$ | $\eta: 0.2$ & 0.1009 & 0.1053 & 10.75 & 6.34 & 15.82 \\
+Evidential & $c: 0.1$ | $\eta: 0$ & 0.1017 & 0.1103 & 11.02 & \textbf{6.04} & 16.36 \\
+\bottomrule
+\end{tabular}
+\end{table*}

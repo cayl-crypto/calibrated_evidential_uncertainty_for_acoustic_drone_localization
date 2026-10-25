@@ -1,0 +1,23 @@
+{
+  "title": "DDL clean: multi-channel drone audio, annotations and log-mel features",
+  "upload_type": "dataset",
+  "description": "Clean 8-channel 96 kHz drone recordings (58,136 x 0.1 s), train / validation (evaluation + conformal calibration) / test split and log-mel features, as used in Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization. Source recordings: Safavi et al., DDL, IEEE MLSP 2025. See README.md.",
+  "creators": [
+    {
+      "name": "Çaylı, Özkan"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "drone localization",
+    "acoustic",
+    "microphone array",
+    "evidential deep learning",
+    "conformal prediction"
+  ],
+  "notes": "Supplementary material for: Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization.",
+  "references": [
+    "Safavi, S., Çaylı, Ö., Safavi, M. A., Cook, B., & Wang, W. (2025). DDL: A dataset for drone detection and localization from multi-channel audio and a deep uncertainty-aware framework. In 2025 IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP), pp. 1-6. IEEE."
+  ]
+}

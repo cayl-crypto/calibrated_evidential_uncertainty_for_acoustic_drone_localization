@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Spatial coverage at all three nominal levels (external prior, final_seed12321; true clipped bounds). Keyhole~=~GT inside all three intervals simultaneously. S+R$\neg$C: sin$\cap$range without cos. C+R$\neg$S: cos$\cap$range without sin. $\star$~=~selected HP.}
+\label{tab:spatial_final_seed12321}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrrrrrrrr}
+\toprule
+& & \multicolumn{5}{c}{68.27\%} & \multicolumn{5}{c}{95.45\%} & \multicolumn{5}{c}{99.73\%} \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-12}\cmidrule(lr){13-17}
+Method & HP & Keyhole & S+R$\neg$C & C+R$\neg$S & Area (m$^2$) & Area (\%) & Keyhole & S+R$\neg$C & C+R$\neg$S & Area (m$^2$) & Area (\%) & Keyhole & S+R$\neg$C & C+R$\neg$S & Area (m$^2$) & Area (\%) \\
+\midrule
+Plain+Conf & — & 0.4083 & 0.1033 & 0.0931 & 412 & 0.21 & 0.8767 & 0.0306 & 0.0331 & 7193 & 3.66 & 0.9939 & 0.0023 & 0.0023 & 49185 & 25.05 \\
+\midrule
+NIG Base $\star$ & c0p7 kl0p01 & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 \\
+NIG Base & c0p7 kl0p2 & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 \\
+NIG Base & c0p1 kl0 & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 \\
+\midrule
+Evid+Conf $\star$ & c0p7 kl0p01 & 0.3510 & 0.1287 & 0.1318 & 1145 & 0.58 & 0.8956 & 0.0287 & 0.0326 & 4605 & 2.35 & 0.9936 & 0.0009 & 0.0031 & 14517 & 7.39 \\
+Evid+Conf & c0p7 kl0p2 & 0.3691 & 0.1199 & 0.1225 & 497 & 0.25 & 0.8918 & 0.0281 & 0.0310 & 3320 & 1.69 & 0.9917 & 0.0027 & 0.0030 & 12482 & 6.36 \\
+Evid+Conf & c0p1 kl0 & 0.3274 & 0.1527 & 0.1354 & 1417 & 0.72 & 0.8809 & 0.0336 & 0.0336 & 5808 & 2.96 & 0.9918 & 0.0016 & 0.0037 & 16650 & 8.48 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,11 @@
+case,name,condition,criterion,pool,pool_share,sample_id,evid_error_m,inside_q6827,inside_q9545,inside_q9973,nig_inside,file
+1,plain_inside_q6827,plain,inside_q6827,4081,0.35096319229446166,4648,3.1129184832335306,True,True,True,True,01_plain_inside_q6827.png
+2,plain_out68_in95,plain,out68_in95,6333,0.5446336429308566,53134,4.610879700567328,False,True,True,False,02_plain_out68_in95.png
+3,plain_out95_in99,plain,out95_in99,1139,0.097953216374269,40510,15.11486146514195,False,False,True,False,03_plain_out95_in99.png
+4,plain_outside_all,plain,outside_all,75,0.006449948400412796,18592,74.03030206310632,False,False,False,False,04_plain_outside_all.png
+5,awgn_15dB_nig_fail_evid_ok,awgn_15dB,nig_fail_evid_ok,93,0.007997936016511867,59338,13.086564508634941,False,True,True,False,05_awgn_15dB_nig_fail_evid_ok.png
+6,awgn_15dB_typical,awgn_15dB,typical,11628,1.0,40929,55.598004566555346,False,False,False,False,06_awgn_15dB_typical.png
+7,awgn_-5dB_typical,awgn_-5dB,typical,11628,1.0,8532,108.51972844122517,False,False,False,False,07_awgn_-5dB_typical.png
+8,clutter_15dB_nig_fail_evid_ok,clutter_15dB,nig_fail_evid_ok,223,0.019177846577227382,44443,16.8342709115881,False,True,True,False,08_clutter_15dB_nig_fail_evid_ok.png
+9,clutter_15dB_typical,clutter_15dB,typical,11628,1.0,17319,55.907880182198,False,False,False,False,09_clutter_15dB_typical.png
+10,clutter_-5dB_typical,clutter_-5dB,typical,11628,1.0,38743,102.16798730451869,False,False,False,False,10_clutter_-5dB_typical.png

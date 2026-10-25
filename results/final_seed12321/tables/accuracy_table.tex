@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Point prediction accuracy on the matched clean condition (external prior, final_seed12321). $\star$~=~selected HP. $\downarrow$ lower is better.}
+\label{tab:accuracy_final_seed12321}
+\begin{tabular}{llccccc}
+\toprule
+Method & HP & $|\hat{s}-s|$ & $|\hat{c}-c|$ & Bearing$\downarrow$ (°) & Range$\downarrow$ (m) & Euclidean$\downarrow$ (m) \\
+\midrule
+Plain+Conf & — & 0.1455 & 0.1435 & 13.66 & 12.42 & 23.22 \\
+Evid+Conf $\star$ & c0p7 kl0p01 & 0.1010 & 0.1040 & 10.64 & 6.16 & 15.68 \\
+Evid+Conf & c0p7 kl0p2 & 0.1009 & 0.1053 & 10.75 & 6.34 & 15.82 \\
+Evid+Conf & c0p1 kl0 & 0.1017 & 0.1103 & 11.02 & 6.04 & 16.36 \\
+\bottomrule
+\end{tabular}
+\end{table}

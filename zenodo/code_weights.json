@@ -1,0 +1,23 @@
+{
+  "title": "Evidential drone localization with conformal calibration: model weights and per-sample results",
+  "upload_type": "software",
+  "description": "Weights of the 16 evidential models (external-prior loss, final grid, seed 12321) and the Base Model, their conformal calibration factors, and per-sample predictions on the clean, AWGN and clutter test sets, for Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization. Source recordings: Safavi et al., DDL, IEEE MLSP 2025. See README.md.",
+  "creators": [
+    {
+      "name": "Çaylı, Özkan"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "drone localization",
+    "acoustic",
+    "microphone array",
+    "evidential deep learning",
+    "conformal prediction"
+  ],
+  "notes": "Supplementary material for: Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization.",
+  "references": [
+    "Safavi, S., Çaylı, Ö., Safavi, M. A., Cook, B., & Wang, W. (2025). DDL: A dataset for drone detection and localization from multi-channel audio and a deep uncertainty-aware framework. In 2025 IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP), pp. 1-6. IEEE."
+  ]
+}

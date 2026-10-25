@@ -1,0 +1,28 @@
+% source: tables/coverage_table.csv
+\begin{table*}[t]
+\centering
+\caption{Component coverage and total MWIS at all three nominal levels. $\star$~=~selected HP. $i$ denotes the number of stochastic forward passes,
+and $j$ denotes the dropout probability.}
+\label{tab:coverage}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrrrrr}
+\toprule
+& & \multicolumn{4}{c}{68.27\%} & \multicolumn{4}{c}{95.45\%} & \multicolumn{4}{c}{99.73\%} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}\cmidrule(lr){11-14}
+Method & Hyper-parameters & sine & cosine & range & MWIS & sine & cosine & range & MWIS & sine & cosine & range & MWIS \\
+\midrule
+Base Model + Conformal & — & 0.6801 & 0.6854 & 0.6827 & 1.6217 & 0.9461 & 0.9512 & 0.9523 & 3.7162 & 0.9977 & 0.9977 & 0.9985 & 4.6010 \\
+\midrule
+MC \cite{gal2016dropout} & $i: 30$ | $j: 0.1$ & 0.1869 & 0.1248 & 0.1514 & 0.6340 & 0.1869 & 0.1248 & 0.1514 & 4.1730 & 0.1869 & 0.1248 & 0.1514 & 69.6633 \\
+MC \cite{gal2016dropout} + Conformal & $i: 30$ | $j: 0.1$ & 0.6753 & 0.6851 & 0.6765 & 0.4888 & 0.9560 & 0.9502 & 0.9556 & 0.9878 & 0.9961 & 0.9969 & 0.9977 & 1.6220 \\
+\midrule
+Evidential * & $c: 0.7$ | $\eta: 0.01$ & 0.8863 & 0.9032 & 0.8940 & 0.9885 & 0.8863 & 0.9032 & 0.8940 & 1.9901 & 0.8863 & 0.9032 & 0.8940 & 20.5251 \\
+Evidential & $c: 0.7$ | $\eta: 0.2$ & 0.9932 & 0.9905 & 0.9984 & 1.4751 & 0.9932 & 0.9905 & 0.9984 & 1.7152 & 0.9932 & 0.9905 & 0.9984 & 6.1583 \\
+Evidential & $c: 0.1$ | $\eta: 0$ & 0.7504 & 0.6302 & 0.6356 & 0.9738 & 0.7504 & 0.6302 & 0.6356 & 2.9454 & 0.7504 & 0.6302 & 0.6356 & 39.4309 \\
+\midrule
+Evidential + Conformal * & $c: 0.7$ | $\eta: 0.01$ & 0.6791 & 0.6789 & 0.6901 & 0.9249 & 0.9528 & 0.9567 & 0.9655 & 1.7082 & 0.9963 & 0.9988 & 0.9977 & 3.5196 \\
+Evidential + Conformal & $c: 0.7$ | $\eta: 0.2$ & 0.6898 & 0.6803 & 0.6894 & 0.9522 & 0.9490 & 0.9536 & 0.9624 & 1.8526 & 0.9958 & 0.9970 & 0.9977 & 3.8721 \\
+Evidential + Conformal & $c: 0.1$ | $\eta: 0$ & 0.6810 & 0.6809 & 0.6809 & 0.9747 & 0.9512 & 0.9542 & 0.9559 & 1.8397 & 0.9955 & 0.9979 & 0.9974 & 4.7074 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,24 @@
+% source: all_settings/all_settings_long.csv
+\begin{table}[t]
+\centering
+\caption{Point localization accuracy under distributional shift for models trained on clean data. Bearing error is reported in degrees, while range and Euclidean errors are reported in meters.}
+\label{tab:plain_localization_accuracy}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllrrrrrr}
+\toprule
+& & & \multicolumn{3}{c}{Base Model} & \multicolumn{3}{c}{Evidential} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Train & Test & HP
+& Bearing & Range & Euclidean
+& Bearing & Range & Euclidean \\
+\midrule
+\multirow{4}{*}{Clean}
+& Clean & \multirow{4}{*}{\shortstack{$c\!:\!0.7$ \\ $\mathrm{\eta}\!:\!0.01$}}
+& 13.66 & 12.42 & 23.22 & 10.64 &  6.16 &  15.68 \\
+& 15\,dB & & 45.52 & 28.55 & 54.70 & 41.95 & 36.42 &  73.94 \\
+& 5\,dB  & & 52.67 & 35.14 & 64.81 & 78.93 & 36.40 & 110.60 \\
+& $-5$\,dB & & 68.16 & 37.34 & 74.46 & 89.84 & 38.51 & 119.38 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

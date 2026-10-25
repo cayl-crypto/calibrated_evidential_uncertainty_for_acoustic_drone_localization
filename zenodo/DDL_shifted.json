@@ -1,0 +1,23 @@
+{
+  "title": "DDL shifted: AWGN, clutter and random-noise test sets for drone localization",
+  "upload_type": "dataset",
+  "description": "Synthetic test-time shifts of the DDL test set: AWGN and pink-noise clutter at 15 / 5 / -5 dB (11,628 recordings each) and 1,500 pure-noise recordings, as 32-bit float WAV and log-mel features, used in Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization. Source recordings: Safavi et al., DDL, IEEE MLSP 2025. See README.md.",
+  "creators": [
+    {
+      "name": "Çaylı, Özkan"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "drone localization",
+    "acoustic",
+    "microphone array",
+    "evidential deep learning",
+    "conformal prediction"
+  ],
+  "notes": "Supplementary material for: Variance-Aware Conformal Calibration for Evidential Acoustic Drone Localization.",
+  "references": [
+    "Safavi, S., Çaylı, Ö., Safavi, M. A., Cook, B., & Wang, W. (2025). DDL: A dataset for drone detection and localization from multi-channel audio and a deep uncertainty-aware framework. In 2025 IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP), pp. 1-6. IEEE."
+  ]
+}

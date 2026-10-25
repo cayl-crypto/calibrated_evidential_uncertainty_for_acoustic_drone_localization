@@ -1,0 +1,81 @@
+% source: tables/spatial_coverage_table.csv
+\begin{table*}[b]
+\centering
+\caption{Spatial coverage at all three nominal levels.
+$\star$ indicates the selected HP. $i$ denotes the number of stochastic forward passes,
+and $j$ denotes the dropout probability.}
+\label{tab:spatial}
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{cccccccc}
+\toprule
+Method & HP & Nominal level
+& SC & S+R$\neg$C & C+R$\neg$S
+& $A_{\mathrm{pred}}\mathrm{(m^2)}$ & $A_{\mathrm{pred}}(\%)$ \\
+\midrule
+
+\multirow{3}{*}{\shortstack{Base Model+\\Conformal}}
+& \multirow{3}{*}{---}
+& 68.27\% & 0.4083 & 0.1033 & 0.0931 & 412   & 0.21 \\
+& & 95.45\% & 0.8767 & 0.0306 & 0.0331 & 7193  & 3.66 \\
+& & 99.73\% & 0.9939 & 0.0023 & 0.0023 & 49185 & 25.05 \\
+\midrule
+
+\multirow{3}{*}{MC \cite{gal2016dropout}}
+& \multirow{3}{*}{\shortstack{$i:30$\\$j:0.1$}}
+& 68.27\% & 0.0048 & 0.0245 & 0.0175 & 3 & 0.00 \\
+& & 95.45\% & 0.0048 & 0.0245 & 0.0175 & 3 & 0.00 \\
+& & 99.73\% & 0.0048 & 0.0245 & 0.0175 & 3 & 0.00 \\
+\addlinespace
+
+\multirow{3}{*}{\shortstack{MC \cite{gal2016dropout} +\\Conformal}}
+& \multirow{3}{*}{\shortstack{$i:30$\\$j:0.1$}}
+& 68.27\% & 0.3527 & 0.1213 & 0.1468 & 695   & 0.35 \\
+& & 95.45\% & 0.8822 & 0.0374 & 0.0284 & 8926  & 4.55 \\
+& & 99.73\% & 0.9908 & 0.0031 & 0.0038 & 36674 & 18.68 \\
+\midrule
+
+\multirow{3}{*}{Evidential $\star$}
+& \multirow{3}{*}{\shortstack{$c:0.7$\\$\eta:0.01$}}
+& 68.27\% & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 \\
+& & 95.45\% & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 \\
+& & 99.73\% & 0.7443 & 0.0549 & 0.0728 & 2713 & 1.38 \\
+\addlinespace
+
+\multirow{3}{*}{Evidential}
+& \multirow{3}{*}{\shortstack{$c:0.7$\\$\eta:0.2$}}
+& 68.27\% & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 \\
+& & 95.45\% & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 \\
+& & 99.73\% & 0.9842 & 0.0080 & 0.0048 & 11466 & 5.84 \\
+\addlinespace
+
+\multirow{3}{*}{Evidential}
+& \multirow{3}{*}{\shortstack{$c:0.1$\\$\eta:0$}}
+& 68.27\% & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 \\
+& & 95.45\% & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 \\
+& & 99.73\% & 0.3132 & 0.1806 & 0.0858 & 1380 & 0.70 \\
+\midrule
+
+\multirow{3}{*}{\shortstack{Evidential+\\Conformal $\star$}}
+& \multirow{3}{*}{\shortstack{$c:0.7$\\$\eta:0.01$}}
+& 68.27\% & 0.3510 & 0.1287 & 0.1318 & 1145  & 0.58 \\
+& & 95.45\% & 0.8956 & 0.0287 & 0.0326 & 4605  & 2.35 \\
+& & 99.73\% & 0.9936 & 0.0009 & 0.0031 & 14517 & 7.39 \\
+\addlinespace
+
+\multirow{3}{*}{\shortstack{Evidential+\\Conformal}}
+& \multirow{3}{*}{\shortstack{$c:0.7$\\$\eta:0.2$}}
+& 68.27\% & 0.3691 & 0.1199 & 0.1225 & 497   & 0.25 \\
+& & 95.45\% & 0.8918 & 0.0281 & 0.0310 & 3320  & 1.69 \\
+& & 99.73\% & 0.9917 & 0.0027 & 0.0030 & 12482 & 6.36 \\
+\addlinespace
+
+\multirow{3}{*}{\shortstack{Evidential+\\Conformal}}
+& \multirow{3}{*}{\shortstack{$c:0.1$\\$\eta:0$}}
+& 68.27\% & 0.3274 & 0.1527 & 0.1354 & 1417  & 0.72 \\
+& & 95.45\% & 0.8809 & 0.0336 & 0.0336 & 5808  & 2.96 \\
+& & 99.73\% & 0.9918 & 0.0016 & 0.0037 & 16650 & 8.48 \\
+
+\bottomrule
+\end{tabular}
+% }
+\end{table*}

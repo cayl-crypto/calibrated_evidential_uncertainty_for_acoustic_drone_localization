@@ -1,0 +1,5 @@
+Method,HP,sin MAE,cos MAE,Bearing MAE (deg),Range MAE (m),Euclidean MAE (m)
+Plain+Conf,—,0.1455,0.1435,13.66,12.42,23.22
+Evid+Conf ★,c0p7_kl0p01,0.1010,0.1040,10.64,6.16,15.68
+Evid+Conf,c0p7_kl0p2,0.1009,0.1053,10.75,6.34,15.82
+Evid+Conf,c0p1_kl0,0.1017,0.1103,11.02,6.04,16.36

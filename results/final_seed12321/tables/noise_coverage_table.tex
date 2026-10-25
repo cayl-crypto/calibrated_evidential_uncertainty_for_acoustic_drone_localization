@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\centering
+\caption{Robustness of the clean-trained, clean-calibrated external-prior model (final_seed12321) at the 95.45\% level under AWGN and clutter (SNR in dB). Coverage, keyhole (all three outputs inside) and empty-region share (sin and cos intervals admit no bearing) in \%. $\star$~=~selected HP.}
+\label{tab:noise_final_seed12321}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrr}
+\toprule
+HP & Quantity & Clean & AWGN 15 & AWGN 5 & AWGN $-$5 & Clutter 15 & Clutter 5 & Clutter $-$5 \\
+\midrule
+c0p7 kl0p01 $\star$ & sin & 95.3 & 43.7 & 23.4 & 11.5 & 48.8 & 39.5 & 15.3 \\
+c0p7 kl0p01 $\star$ & cos & 95.7 & 32.9 & 14.4 & 2.0 & 47.7 & 26.0 & 13.1 \\
+c0p7 kl0p01 $\star$ & range & 96.6 & 13.1 & 11.0 & 8.9 & 13.4 & 14.2 & 16.3 \\
+c0p7 kl0p01 $\star$ & keyhole & 89.6 & 1.2 & 0.0 & 0.0 & 3.5 & 0.6 & 0.0 \\
+c0p7 kl0p01 $\star$ & empty region & 0.0 & 50.5 & 78.9 & 100.0 & 19.5 & 35.9 & 60.7 \\
+c0p7 kl0p01 $\star$ & MWIS & 1.71 & 28.60 & 49.55 & 57.18 & 26.13 & 42.95 & 57.81 \\
+c0p7 kl0p01 $\star$ & area (%) & 2.35 & 0.12 & 0.02 & 0.00 & 0.33 & 0.19 & 0.04 \\
+c0p7 kl0p01 $\star$ & Euclid. MAE (m) & 15.68 & 73.94 & 110.60 & 119.38 & 73.28 & 108.60 & 119.52 \\
+\midrule
+c0p7 kl0p2 & sin & 94.9 & 42.2 & 27.9 & 13.4 & 50.2 & 40.4 & 22.9 \\
+c0p7 kl0p2 & cos & 95.4 & 35.8 & 18.6 & 2.7 & 42.6 & 27.5 & 7.9 \\
+c0p7 kl0p2 & range & 96.2 & 13.3 & 16.9 & 17.4 & 20.5 & 16.8 & 19.9 \\
+c0p7 kl0p2 & keyhole & 89.2 & 1.4 & 0.3 & 0.0 & 4.2 & 1.3 & 0.1 \\
+c0p7 kl0p2 & empty region & 0.1 & 49.6 & 85.1 & 99.9 & 30.1 & 63.9 & 88.8 \\
+c0p7 kl0p2 & MWIS & 1.85 & 29.85 & 42.97 & 57.92 & 26.89 & 37.27 & 56.01 \\
+c0p7 kl0p2 & area (%) & 1.69 & 0.20 & 0.02 & 0.00 & 0.38 & 0.15 & 0.02 \\
+c0p7 kl0p2 & Euclid. MAE (m) & 15.82 & 71.31 & 92.31 & 102.38 & 72.78 & 88.45 & 106.47 \\
+\midrule
+c0p1 kl0 & sin & 95.1 & 58.2 & 50.9 & 30.0 & 60.0 & 57.3 & 28.7 \\
+c0p1 kl0 & cos & 95.4 & 51.2 & 31.1 & 5.0 & 63.4 & 59.0 & 19.2 \\
+c0p1 kl0 & range & 95.6 & 14.7 & 11.9 & 8.9 & 16.2 & 13.3 & 12.3 \\
+c0p1 kl0 & keyhole & 88.1 & 4.5 & 2.5 & 0.0 & 7.4 & 4.4 & 0.4 \\
+c0p1 kl0 & empty region & 0.0 & 26.0 & 59.7 & 99.9 & 6.7 & 18.2 & 50.7 \\
+c0p1 kl0 & MWIS & 1.84 & 23.62 & 30.17 & 50.75 & 20.82 & 25.53 & 43.98 \\
+c0p1 kl0 & area (%) & 2.96 & 0.68 & 0.21 & 0.00 & 1.18 & 1.19 & 0.19 \\
+c0p1 kl0 & Euclid. MAE (m) & 16.36 & 82.00 & 86.73 & 103.70 & 80.33 & 89.90 & 114.07 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

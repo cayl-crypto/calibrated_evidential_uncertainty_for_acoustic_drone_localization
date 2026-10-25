@@ -1,0 +1,14 @@
+# Large files: published on Zenodo (see README "Zenodo records"), not in git
+weights/
+results/*/per_sample/
+data/
+*.pt
+*.wav
+*.tar
+*.zip
+
+# Local artefacts
+__pycache__/
+*.pyc
+slurm_logs/
+.ipynb_checkpoints/
